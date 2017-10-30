@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ReadDataFromJson;assembly=ReadDataFromJson"
+    Title = "Edit this JSSE"
+    x:Class="ReadDataFromJson.SecondPage">
+	<RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}" VerticalOptions="FillAndExpand" Spacing="0" Padding="0,20,0,0">
+            <ScrollView>
+            <StackLayout Spacing = "20" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Padding="10,5,10,10">
+                    <StackLayout Orientation = "Horizontal" Spacing = "15" HorizontalOptions = "FillAndExpand">
+                    <Label Text = "JSSE ID" Font = "14" TextColor = "#717171"/>
+                     <Label Text = "JSSE ID" Font = "16" TextColor = "#4A4A4A"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation = "Vertical" Spacing = "10" HorizontalOptions = "FillAndExpand">
+                        <Label Text = "Status" Font = "14" TextColor = "#717171"/>
+                        <Frame Padding ="1" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                        <Frame Padding ="10" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                           <local:LoginCustomEntry Margin ="5,0,5,0" Text = "Draft" FontSize = "16" TextColor = "#4A4A4A"/>
+                        </Frame>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Orientation = "Vertical" Spacing = "10" HorizontalOptions = "FillAndExpand">
+                        <Label Text = "Location" Font = "14" TextColor = "#717171"/>
+                        <Frame Padding ="1" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                        <Frame Padding ="10,10,12,10" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                            <StackLayout Orientation = "Horizontal" HorizontalOptions = "FillAndExpand" Spacing ="5">
+                           <local:LoginCustomEntry HorizontalOptions = "FillAndExpand" Margin ="5,0,5,0" Text = "498 hill Common apt. 022fosfs shss......................" WidthRequest = "240" FontSize = "16" TextColor = "#4A4A4A"/>
+                            <Image Source ="Arrow"></Image>
+                           </StackLayout>
+                        </Frame>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Orientation = "Vertical" Spacing = "10" HorizontalOptions = "FillAndExpand">
+                        <Label Text = "JSSE enter by" Font = "14" TextColor = "#717171"/>
+                        <Frame Padding ="1" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                        <Frame Padding ="10" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                           <local:LoginCustomEntry HorizontalOptions = "FillAndExpand" Margin ="5,0,5,0" Text = "Name" FontSize = "16" TextColor = "#4A4A4A"/>
+                        </Frame>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Orientation = "Vertical" Spacing = "10" HorizontalOptions = "FillAndExpand">
+                        <Label Text = "Region" Font = "14" TextColor = "#717171"/>
+                        <Frame Padding ="1" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                        <Frame Padding ="10" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                           <StackLayout Orientation = "Horizontal" HorizontalOptions = "FillAndExpand" Spacing ="5">
+                            <local:CustomPicker Title = "Wilmington" TextColor = "#4A4A4A" VerticalOptions = "Center" HorizontalOptions = "FillAndExpand"/>
+                            <Image Source ="Arrow" VerticalOptions = "Center" HorizontalOptions = "Center"></Image>
+                           </StackLayout>
+                        </Frame>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Orientation = "Vertical" Spacing = "10" HorizontalOptions = "FillAndExpand">
+                        <Label Text = "JSSE date" Font = "14" TextColor = "#717171"/>
+                        <Frame Padding ="1" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                        <Frame Padding ="10,8,8,8" OutlineColor ="#CCCCCC"  HasShadow = "false" CornerRadius = "0">
+                           <StackLayout Orientation = "Horizontal" HorizontalOptions = "FillAndExpand" Spacing ="5">
+                            <local:CustomDatePicker TextColor = "#4A4A4A" VerticalOptions = "Center" HorizontalOptions = "FillAndExpand"/>
+                            <Image WidthRequest = "36" HeightRequest =  "25" Source ="Calender" VerticalOptions = "Center" HorizontalOptions = "Center"></Image>
+                           </StackLayout>
+                        </Frame>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions = "FillAndExpand" Orientation = "Vertical" VerticalOptions = "Start" Spacing = "15">
+                       <Button BorderRadius = "4" FontSize ="20" TextColor ="#FFFFFF" Text = "Cancel" BackgroundColor = "#9B9B9B"></Button>
+                       <Button BorderRadius = "4" FontSize ="20" TextColor ="#FFFFFF" Text = "Save" BackgroundColor = "#2F87C6"></Button>
+                    </StackLayout>
+                    
+                </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </RelativeLayout>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="Arrow" Order="Primary" Priority="1">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+</ContentPage>

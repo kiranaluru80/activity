@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{18E96A13-D497-4684-8A0B-DB204F7A65A6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReadDataFromJson/SignInPageViewModel.cs">
+    <Files>
+      <File FileName="LoginPage.xaml.cs" Line="5" Column="1" />
+      <File FileName="ReadDataFromJson/SignInPage.xaml" Line="39" Column="1" />
+      <File FileName="ReadDataFromJson/SignInPageViewModel.cs" Line="7" Column="11" />
+      <File FileName="ReadDataFromJson/SamplePage.xaml" Line="28" Column="1" />
+      <File FileName="ReadDataFromJson/SamplePage.xaml.cs" Line="1" Column="1" />
+      <File FileName="ReadDataFromJson/SecondPage.xaml" Line="84" Column="1" />
+      <File FileName="ReadDataFromJson/App.xaml.cs" Line="15" Column="35" />
+      <File FileName="ReadDataFromJson/SignInPage.xaml.cs" Line="14" Column="26" />
+      <File FileName="ReadDataFromJson/LoginCustomEntry.cs" Line="1" Column="1" />
+      <File FileName="ReadDataFromJson/LoginPage.xaml" Line="46" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ravikiranreddy/Downloads/newlogin-master-3/SecondPagenew/ReadDataFromJson/ReadDataViewModel.cs" relfile="ReadDataFromJson/ReadDataViewModel.cs" line="40" column="1" />
+      <Breakpoint file="/Users/ravikiranreddy/Downloads/newlogin-master-3/SecondPagenew/ReadDataFromJson/ReadDataViewModel.cs" relfile="ReadDataFromJson/ReadDataViewModel.cs" line="20" column="1" />
+      <Breakpoint file="/Users/ravikiranreddy/Downloads/newlogin-master-3/SecondPagenew/ReadDataFromJson/ReadDataViewModel.cs" relfile="ReadDataFromJson/ReadDataViewModel.cs" line="94" column="78" />
+      <Breakpoint file="/Users/ravikiranreddy/Downloads/newlogin-master-3/SecondPagenew/ReadDataFromJson/DynamicScreen.xaml.cs" relfile="ReadDataFromJson/DynamicScreen.xaml.cs" line="54" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ReadDataFromJson.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A5B98E01-F871-4156-9CBA-1FE909B68839" />
+  <MultiItemStartupConfigurations />
+</Properties>

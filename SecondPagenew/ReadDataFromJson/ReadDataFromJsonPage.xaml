@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ReadDataFromJson" x:Class="ReadDataFromJson.ReadDataFromJsonPage">
+	<StackLayout Margin="20">
+		<Picker Title="Select a monkey" ItemsSource="{Binding RootObjectSe}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedMajorGroup}" />
+
+		<SearchBar x:Name = "searchRef" />
+		
+		<ListView x:Name="listView" ItemsSource="{Binding OrgRelatedData}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<ViewCell.View>
+								<StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" VerticalOptions = "Center">
+									<Label Text="{Binding FirstName}" HorizontalOptions="FillAndExpand" />
+								</StackLayout>
+						</ViewCell.View>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+</ContentPage>

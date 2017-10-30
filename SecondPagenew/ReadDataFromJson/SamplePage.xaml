@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ReadDataFromJson.SamplePage">
+	<RelativeLayout>
+            <ScrollView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}">
+            <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" Padding ="0,20,0,0" Spacing="0">
+
+                <!-- COpy -->
+                <StackLayout BackgroundColor = "#F9F9F9" HorizontalOptions="FillAndExpand" VerticalOptions = "Start">
+                   <Label Margin = "12" Text = "From most recennt" FontSize = "16" TextColor = "#9B9B9B"></Label>
+                </StackLayout>
+                  <!-- COpy -->
+             
+
+            </StackLayout>
+            </ScrollView>
+           
+            <!-- Starting of Activity Indicator Layout -->
+            <StackLayout BackgroundColor="#90000000" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  x:Name="activityIndicatorLayout" IsVisible="{Binding IsBusy}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=X,Factor=1.0}" 
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y,Factor=1.0}" 
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" 
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}">
+                <ActivityIndicator Color="White" IsVisible="true" IsRunning="true" HorizontalOptions="Center" VerticalOptions="FillAndExpand" x:Name="actIndicator" />
+            </StackLayout>
+            <!-- Ending of Activity Indicator Layout -->
+        </RelativeLayout>
+</ContentPage>
